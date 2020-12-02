@@ -1,6 +1,6 @@
 package zadanie;
 
-public class zadanie25listopada {
+public class zadanie25listopad {
     public static void main(String[] args){
 
         for (int i=0; i<=10; i++){
@@ -8,3 +8,4 @@ public class zadanie25listopada {
         }
     }
 }
+
