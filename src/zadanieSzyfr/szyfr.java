@@ -37,23 +37,23 @@ public class szyfr {
 
                 }
                 //inaczej jeżeli trafiliśmy na x(120) to zamieniamy na a(97)
-                else if(tab[i]== 'X'){
-                    tab[i]= 'A';
+                else if(tab[i]== 'x'){
+                    tab[i]= 'a';
 
                 }
                 //inaczej jeżeli trafiliśmy na y(121) to zamieniamy na b(98)
-                else if(tab[i]== 'Y'){
-                    tab[i]= 'B';
+                else if(tab[i]== 'y'){
+                    tab[i]= 'b';
 
                 }
                 //inaczej jeżeli trafiliśmy na x(122) to zamieniamy na a(99)
-                else if(tab [i]== 'X'){
-                    tab[i]= 'A';
+                else if(tab [i]== 'x'){
+                    tab[i]= 'a';
 
                 }
                 //inaczej dodaj do liczby wartość 3
                 else {
-                     String.valueOf(tab[i] +=  3);
+                     tab[i] +=  3;
 
                 }
             }
