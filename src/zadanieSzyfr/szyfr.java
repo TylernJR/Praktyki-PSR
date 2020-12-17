@@ -47,8 +47,8 @@ public class szyfr {
 
                 }
                 //inaczej jeżeli trafiliśmy na x(122) to zamieniamy na a(99)
-                else if(tab [i]== 'x'){
-                    tab[i]= 'a';
+                else if(tab [i]== 'z'){
+                    tab[i]= 'c';
 
                 }
                 //inaczej dodaj do liczby wartość 3
