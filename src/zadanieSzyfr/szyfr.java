@@ -27,27 +27,33 @@ public class szyfr {
 
                 }
                 //inaczej jeżeli trafiliśmy na Y(89) to zamieniamy na B(66)
-                else if(){
+                else if(tab[i]== 'Y'){
+                    tab[i]= 'B';
 
                 }
                 //inaczej jeżeli trafiliśmy na Z(90) to zamieniamy na C(67)
-                else if(){
+                else if(tab[i]== 'Z'){
+                    tab[i]= 'C';
 
                 }
                 //inaczej jeżeli trafiliśmy na x(120) to zamieniamy na a(97)
-                else if(){
+                else if(tab[i]== 'X'){
+                    tab[i]= 'A';
 
                 }
                 //inaczej jeżeli trafiliśmy na y(121) to zamieniamy na b(98)
-                else if(){
+                else if(tab[i]== 'Y'){
+                    tab[i]= 'B';
 
                 }
                 //inaczej jeżeli trafiliśmy na x(122) to zamieniamy na a(99)
-                else if(){
+                else if(tab [i]== 'X'){
+                    tab[i]= 'A';
 
                 }
                 //inaczej dodaj do liczby wartość 3
                 else {
+                     String.valueOf(tab[i] +=  3);
 
                 }
             }
@@ -55,7 +61,7 @@ public class szyfr {
 
         //Stworzenie zmiennej do zwrócenia przez funkcję
         //Conversja tablicy char spowrotem na string (za pomocą metody z klasy string - String.valueOf(nazwatablicy))
-        String result = String.valueOf();
+        String result = String.valueOf(tab);
         return result;
     }
 
