@@ -5,22 +5,25 @@ public class szyfr {
     //Funkcja kodująca text do szyfru cezara
     public static String code(String text){
 
+        char[] tab= text.toCharArray();
+
         //text zamieniamy na tablice char za pomocą text.toCharArray()
         //oraz przypisujemy do zmiennej typu char[]
 
         //pętla przechodząca po wszystkich miejscach w tablicy char (uzupełnija warunek)
         //pętla ma się wykonywać dopuki wasze i (zmienna iterująca) jest mniejsza nić .lenght waszej tablicy char
-        for (int i =0; /* Tu wstaw odpowiedni warunek */; i++){
+        for (int i =0; i < text.length(); i++){
 
             //sprawdzamy czy i-ty element w tablicy jest literą
             //czyli jeżeli wartość w tablicy char nazwatablicy[i] jest w zakresie 65-90 (duże liczby), w zakresie 97-122 (małe liczby) - patrz tablica ASCII wartości decymalne
             //zostawiam wam argument bo to jest chyba najtrudniejszy fragment kodu (tylko uzupełnijcie go o nazwe waszej tablicy, moja nazywała się textchar)
-            if((textchar[i] >= 65 && textchar[i] <= 90) || (textchar[i] >= 97 && textchar[i] <= 122)){
+            if((tab[i] >= 65 && tab[i] <= 90) || (tab[i] >= 97 && tab[i] <= 122)){
 
                 //seria ifów które sprawdzą nam końcówki (jak natrafimy na 88,89,90 lub 120,121,122 to dodanie trójki wyjdzie nam poza zakres liter, więc można na sztywno ustalić jakie litery mają się tam znaleźć)
 
                 //jeżeli trafiliśmy na X(88) to zamieniamy na A(65)
-                if(){
+                if(tab[i]== 'X'){
+                    tab[i]= 'A';
 
                 }
                 //inaczej jeżeli trafiliśmy na Y(89) to zamieniamy na B(66)
@@ -62,6 +65,8 @@ public class szyfr {
         //ten text powinno wam zamienić na "DdEeFfGg, AaBbCc, !.?<>" - jeżeli tak się dzieje to znaczy że jest oki
         String text = "AaBbCcDd, XxYyZz, !.?<>";
         System.out.println(text);
+        String cipher = code(text);
+        System.out.println(cipher);
 
     }
 }
